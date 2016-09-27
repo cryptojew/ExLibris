@@ -290,6 +290,19 @@ CREATE TABLE EXLIBRIS.IDX_CATLG(
         ON UPDATE NO ACTION
 ); 
 
+-- TP AVALIACAO 
+
+-- TA APRECIACAO 
+
+
+
+
+-- *******************************************************************************************
+--  DML - Data manipulation language 
+--  Faz os inserts de registros de base no banco de dados - tabelas tradicionais
+-- *******************************************************************************************
+
+
 -- Insert valores na tabela PESSOA. Valor piloto: vanity value... :) 
 INSERT INTO PESSOA (NOME, SOBRENOME, ANO_NASC, BIO) VALUES('JULIO CESAR', 'TORRES DOS SANTOS', '1976', 'AUTOR DESTE BANCO DE DADOS. CARA FODAO...');
 
@@ -310,6 +323,7 @@ INSERT INTO EXLIBRIS.PAPEL(PAPEL) VALUES ('Apresentador');
 INSERT INTO EXLIBRIS.PAPEL(PAPEL) VALUES ('Organizador'); 
 INSERT INTO EXLIBRIS.PAPEL(PAPEL) VALUES ('Editor'); 
 INSERT INTO EXLIBRIS.PAPEL(PAPEL) VALUES ('Prefacio'); 
+INSERT INTO EXLIBRIS.PAPEL(PAPEL) VALUES ('Avaliador'); 
 
 
 
