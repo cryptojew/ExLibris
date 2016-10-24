@@ -23,7 +23,7 @@
 -- ****************************************************************************
 
 -- Apaga o banco de dados anterior
-DROP database EXLIBRIS; 
+DROP DATABASE EXLIBRIS; 
 
 -- CRIA O BANCO DE DADOS
 CREATE DATABASE EXLIBRIS;
