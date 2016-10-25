@@ -1,8 +1,5 @@
+-- Carga de valores iniciais para o teste das tabelas.
 -- 
--- 
---
---
-
 INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
              SG_SEXO, SG_IDIOMA_ISO639, DOCUMENTO, BIO)
 VALUES(      'Julio Cesar','Torres dos Santos',
@@ -48,3 +45,105 @@ INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
 VALUES(      'Anthony','Beevor',
              NULL,NULL,'EN','','')
 ;
+INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
+             SG_SEXO, SG_IDIOMA_ISO639, DOCUMENTO, BIO)
+VALUES(      'Alan','Moore',
+             NULL,'M','EN','','')
+;
+INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
+             SG_SEXO, SG_IDIOMA_ISO639, DOCUMENTO, BIO)
+VALUES(      'Eddie','Campbell',
+             NULL,'M','EN','','')
+;
+INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
+             SG_SEXO, SG_IDIOMA_ISO639, DOCUMENTO, BIO)
+VALUES(      'Fabio','Moon',
+             NULL,'M','PT','','')
+;
+INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
+             SG_SEXO, SG_IDIOMA_ISO639, DOCUMENTO, BIO)
+VALUES(      'Gabriel','Bá',
+             NULL,'M','PT','','')
+;
+INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
+             SG_SEXO, SG_IDIOMA_ISO639, DOCUMENTO, BIO)
+VALUES(      'Jules','Verne',
+             NULL,'M','FR','','')
+;
+INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
+             SG_SEXO, SG_IDIOMA_ISO639, DOCUMENTO, BIO)
+VALUES(      'Miguel','de Cervantes',
+             NULL,'M','ES','','')
+;
+INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
+             SG_SEXO, SG_IDIOMA_ISO639, DOCUMENTO, BIO)
+VALUES(      'Hienrich','Heine',
+             NULL,'M','DE','','')
+;
+INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
+             SG_SEXO, SG_IDIOMA_ISO639, DOCUMENTO, BIO)
+VALUES(      'Gilberto','Freire',
+             NULL,'M','PT','','')
+;
+INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
+             SG_SEXO, SG_IDIOMA_ISO639, DOCUMENTO, BIO)
+VALUES(      'Thomas','Mann',
+             NULL,'M','DE','','')
+;
+INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
+             SG_SEXO, SG_IDIOMA_ISO639, DOCUMENTO, BIO)
+VALUES(      'Ludwig van','Beethoven',
+             NULL,'M','DE','','')
+;
+INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
+             SG_SEXO, SG_IDIOMA_ISO639, DOCUMENTO, BIO)
+VALUES(      'J R R','Tolkien',
+             NULL,'M','EN','','')
+;
+INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
+             SG_SEXO, SG_IDIOMA_ISO639, DOCUMENTO, BIO)
+VALUES(      'Mary','Shelley',
+             NULL,'F','EN','','')
+;
+INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
+             SG_SEXO, SG_IDIOMA_ISO639, DOCUMENTO, BIO)
+VALUES(      'Johann Wolfgang von','Goethe',
+             NULL,'M','DE','','')
+;
+INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
+             SG_SEXO, SG_IDIOMA_ISO639, DOCUMENTO, BIO)
+VALUES(      'Margareth','MacMillan',
+             NULL,'F','EN','','')
+;
+INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
+             SG_SEXO, SG_IDIOMA_ISO639, DOCUMENTO, BIO)
+VALUES(      'Chris','Gillebeau',
+             NULL,'M','EN','','')
+;
+INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
+             SG_SEXO, SG_IDIOMA_ISO639, DOCUMENTO, BIO)
+VALUES(      'Andreas M.','Antonopoulos',
+             NULL,'M','EN','','')
+;
+INSERT INTO PESSOA(NOME, SOBRENOME, DATA_NASCIMENTO,
+             SG_SEXO, SG_IDIOMA_ISO639, DOCUMENTO, BIO)
+VALUES(      'Gabriel','Garcia Marques',
+             NULL,'M','ES','','')
+;
+
+-- INSERT INTO OBRA 
+
+INSERT INTO OBRA(TITULO, SUBTITULO, TITULO_ORIGINAL, 
+SG_IDIOMA_ORIGINAL, COD_GENERO, SUMARIO, SG_TIPO_STATUS) 
+VALUES
+('In Stahlgewittern', 'Als dem Tagebuch eines Stosstruppführers', 
+'', 'DE', 2, '', 'A'); 
+
+INSERT INTO AUTORES(COD_OBRA, COD_PESSOA) VALUES (1, 2); 
+
+INSERT INTO EXEMPLAR(COD_OBRA, COD_FORMATO, COD_EDITORA, EDICAO_NO, 
+EDICAO_LOCAL, EDICAO_ANO, QTD_PAGINAS, COLECAO, COLECAO_NO, CODIGO_BARRAS, 
+ISBN, ISSN, CDD, MOEDA, PRECO, SG_TIPO_STATUS) 
+VALUES
+(1, 1, NULL, 20, 'Stuttgart', 2014, 1049, 'Jungers Werk', 'Special', 
+NULL, NULL, NULL, NULL, 'CAD', 90.5, 'A');
