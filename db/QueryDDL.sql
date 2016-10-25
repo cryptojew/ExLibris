@@ -581,6 +581,28 @@ CREATE TABLE EXLIBRIS.EMAIL_PESSOA(
 
 
 -- *******************************************************************************************
+--  Criacao do usuario de producao do sistema. 
+-- *******************************************************************************************
+
+CREATE USER 'exlibrisusr'@'localhost' IDENTIFIED BY 'baseuser'; 
+
+GRANT SELECT, INSERT, UPDATE ON EXLIBRIS.* TO 'exlibrisusr'@'localhost'; 
+
+FLUSH PRIVILEGES; 
+
+
+-- *******************************************************************************************
+--  Criacao do administrador de producao do sistema. 
+-- *******************************************************************************************
+
+CREATE USER 'exlibrisadmin'@'localhost' IDENTIFIED BY 'strpdm@9059a'; 
+
+GRANT ALL PRIVILEGES  ON EXLIBRIS.* TO 'exlibrisadmin'@'localhost'; 
+
+FLUSH PRIVILEGES; 
+
+
+-- *******************************************************************************************
 --  VIEWS - Cria as views  do sistema
 -- *******************************************************************************************
 
